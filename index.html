@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+ <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cobrinha</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+</head>
+
+<body>
+    <H1>A COBRINHA</H1>
+    <div class="titulo">
+        <H1>A COBRINHA</H1>
+        <p class="criador"><a href="https://github.com/Arthur-SS/" target="_blank">by:Arthur S Soares</a></p>
+    </div>
+
+    <input class="btaJogar" type="button" value="JOGAR" onclick="jogoComeçar()">
+    <section class="warapp">
+        <div class="jogo">
+ <div class="perdeu"></div>
+            <div class="score"> <div id="pontos"></div>
+            </div>
+            <canvas id="cobrinha" width="512" height="512"></canvas>
+        </div>
+    </section>
+    <section class="container">
+        <div class="botoes">
+            <input class="botao" id="cima" type="button" value="C" onclick="botaoCima()" />
+            <div class="horizontal">
+                <input class="botao" id="esquerda" type="button" value="B" onclick="botaoEsquerda()" />
+                <input class="botao" id="baixo" type="button" value="D" onclick="botaoBaixo()" />
+                <input class="botao" id="direita" type="button" value="A" onclick="botaoDireita()" />
+            </div>
+            
+        </div>
+    </section>
+    <div class="imagens">
+        <img id="maca" src="assets/pixel-art/maçã.png" alt="maçã">
+        <img src="assets/pixel-art/cabeçaCobra.png" alt="cabeçaCobra" id="cabecaCobra">
+ <img src="assets/pixel-art/morreCobra.png" alt="Ossos" id="morreCobra">
+        <img id="corpoCobra" src="assets/pixel-art/corpoCobra.png" alt="corpoCobra">
+        <img src="assets/pixel-art/fome-10.png" alt="fome-10" id="fome-10">
+    </div>
+</body>
+
+</html>
