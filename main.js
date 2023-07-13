@@ -13,19 +13,19 @@ const food = {
 };
 
 function createBackGround() {
-    context.fillStyle = 'lightgreen';
+    context.fillStyle = 'grey';
     context.fillRect(0, 0, 16 * box, 16 * box);
 }
 
 function createSnake() {
     for (let index = 0; index < snake.length; index++) {
-        context.fillStyle = "green";
+        context.fillStyle = "black";
         context.fillRect(snake[index].x, snake[index].y, box, box)
     }
 }
 
 function drawFood() {
-    context.fillStyle = 'red';
+    context.fillStyle = 'blue';
     context.fillRect(food.x, food.y, box, box);
 }
 
